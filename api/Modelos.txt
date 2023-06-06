@@ -1,0 +1,113 @@
+Vehicle
+ patent: string;
+ brand: string;
+ model: string;
+ year: string;
+ img: string[];
+ ownerId: string;
+ chauffeurId: string;
+ deleted: boolean;
+
+User:
+name: string;
+email: string;
+password: string;
+adress: string;
+payments: {
+    cardNumber: string;
+    expirationDate: string;
+    securityCode: string;
+ };
+history: {
+    orders: string[];
+    travels: string[];
+  };
+img: string;
+DNI: string;
+deleted: boolean;
+
+Travel:
+userId: string;
+chauffeurId: string;
+date: Date;
+origin: string;
+destination: string;
+price: string;
+status: boolean;
+travel: TravelStatus; "TravelStatus = "pending" | "progress" | "approved" | "rejected""
+
+Products:
+name: string;
+price: string;
+description: string;
+stock: number;
+type: TypeProduct;
+localId: string;
+img: string;
+deleted: boolean;
+
+Owner:
+name: string;
+email: string;
+phone: string;
+DNI: string;
+vehiclesId: string[];
+adress?: string;
+deleted?: boolean;
+
+Order:
+userId: string;
+distributorId: string;
+productId: string;
+localId: string;
+date: string;
+price: number;
+destination: string;
+status: boolean;
+order: OrderStatus; "type OrderStatus = "pending" | "progress" | "approved" | "rejected";
+
+Local:
+name: string;
+adress: string;
+email: string;
+password: string;
+img: string;
+payments: Object[]; //provisional
+history: string[];
+state: boolean;
+deleted: boolean;
+
+Distributor:
+name: string;
+adress: string;
+email: string;
+password: string;
+img: string;
+vehicle: string;
+DNI: number;
+license: string;
+payments: Object[]; 
+history: string[];
+deleted: boolean;
+
+Chauffeur:
+name: string;
+email: string;
+password: string;
+phone: string;
+DNI: string;
+license: string;
+address: string;
+deleted: boolean;
+ownerState: boolean;
+vehicle: {
+    vehicleId: string;
+    patent: string;
+  };
+payments: {
+    cardNumber: string;
+    expirationDate: string;
+    securityCode: string;
+  };
+img: string;
+history?: string[];

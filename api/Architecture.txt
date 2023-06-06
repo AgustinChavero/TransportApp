@@ -1,0 +1,47 @@
+src/
+├── connection/         # Carpeta para la conexión a la base de datos
+│   ├── db.ts           # Módulo para la conexión a la base de datos
+│   └── ...
+│
+├── controllers/        # Carpeta para los controladores de eventos
+│   ├── inputs/         # Carpeta para los controladores de entradas de datos
+│   │   ├── input-1.ts  # Módulo para el controlador de entrada 1
+│   │   ├── input-2.ts  # Módulo para el controlador de entrada 2
+│   │   └── ...
+│   │
+│   └── outputs/        # Carpeta para los controladores de salidas de datos
+│       ├── output-1.ts # Módulo para el controlador de salida 1
+│       ├── output-2.ts # Módulo para el controlador de salida 2
+│       └── ...
+├── interfaces/         # Carpeta para los modelos de los datos(interfaces y types)
+│   ├── user.ts         # Archivo con los modelos de user
+│   ├── chauffeur.ts    # Archivo con los modelos de chauffeur
+│   ├── distributor.ts  # Archivo con los modelos de distributor
+│   ├── local.ts        # Archivo con los modelos de local
+│   └── ...
+│
+├── routers/            # Carpeta para los routers de la aplicación
+│   ├── inputs/         # Carpeta para los routers de entradas de datos
+│   │   ├── input-1.ts  # Módulo para el router de entrada 1
+│   │   ├── input-2.ts  # Módulo para el router de entrada 2
+│   │   └── ...
+│   │
+│   └── outputs/        # Carpeta para los routers de salidas de datos
+│       ├── output-1.ts # Módulo para el router de salida 1
+│       ├── output-2.ts # Módulo para el router de salida 2
+│       └── ...
+│
+├── schema/            # Carpeta para los modelos de la base de datos
+│   ├── model-1.ts     # Módulo para el modelo 1
+│   ├── model-2.ts     # Módulo para el modelo 2
+│   └── ...
+│
+├── types/             # Carpeta para los tipos de datos
+│   ├── type-1.d.ts    # Módulo para el tipo de datos 1
+│   ├── type-2.d.ts    # Módulo para el tipo de datos 2
+│   └── ...
+│
+└── utils/              # Carpeta para los middlewares caseros
+    ├── middleware-1.ts # Módulo para el middleware personalizado 1
+    ├── middleware-2.ts # Módulo para el middleware personalizado 2
+    └── ...
