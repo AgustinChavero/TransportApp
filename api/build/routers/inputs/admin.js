@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const admin_1 = require("../../controllers/inputs/admin");
+const router = (0, express_1.Router)();
+router.put("/status", admin_1.updateAdminStatus);
+router.patch("/changeStatusChauffeur/:id", admin_1.updateStatusChauffeur);
+router.patch("/changeStatusDelivery/:id", admin_1.updateStatusDelivery);
+router.patch("/changeStatusVehicle/:id", admin_1.updateStatusVehicle);
+router.put("/enableSeats/:id", admin_1.updateSeatPassage);
+router.put("/disableSeats/:id", admin_1.disableSeatsPassage);
+exports.default = router;
