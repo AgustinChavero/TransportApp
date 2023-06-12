@@ -1,0 +1,30 @@
+app/
+├── home/         # Carpeta/ruta home
+│   ├── especiales      #comienzo de rutas anidadas de seccion viajes especiales 
+│   └── gestion         #comienzo de rutas anidadas de seccion gestion de viajes 
+│   └── paqueteria      #comienzo de rutas anidadas de seccion de paqueteria
+│   └── reserva         #comienzo de rutas anidadas de seccion de reserva
+│
+├── perfil/        # Carpeta para los perfiles de  usuario / chofer / cadete
+│   ├── layout      # seccion html estatico de perfil
+│   ├── page        # seccion html dinamico del apartado perfil
+│
+├── types/         # Carpeta para los modelos de los datos(interfaces y types)
+│   ├── user.ts         # Archivo con los modelos de user
+│   ├── chauffeur.ts    # Archivo con los modelos de chauffeur
+│   ├── distributor.ts  # Archivo con los modelos de distributor
+│   ├── local.ts        # Archivo con los modelos de local
+│   └── ...
+│
+
+
+
+assets/
+├──incons/                # Carpeta para guardar los iconos a renderizar en todo el site
+│
+├──imagenes/              # Carpeta para guardar imagenes, png, jpg, y demas imagenes necesarias
+│
+├──data/                  # Archivo para guardar arrays de data necesaria para mapear en diferentes
+│                             partes del sitio como la nav bar, la seccion de historial de viajes, etc
+│
+│

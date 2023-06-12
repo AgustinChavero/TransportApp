@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const local_1 = require("../../controllers/inputs/local");
+const router = (0, express_1.Router)();
+router.post("/", local_1.newLocal);
+router.put("/:id", local_1.updateLocal);
+router.patch("/enable/:id", local_1.enableLocal);
+router.delete("/delete/:id", local_1.deleteLocal);
+exports.default = router;

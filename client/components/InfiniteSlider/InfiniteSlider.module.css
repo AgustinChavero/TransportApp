@@ -1,0 +1,20 @@
+/* InfiniteSlider.module.css */
+.sliderContainer {
+    width: 100%; /* Adjust this value based on the number of logos displayed */
+    display: flex;
+    animation: slideAnimation 30s linear infinite; /* Adjust the animation duration as needed */
+  }
+  
+  @keyframes slideAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .slide {
+    flex: 0 0 calc(100% / 3); /* Adjust the percentage value based on the number of logos displayed */
+  }
+  
